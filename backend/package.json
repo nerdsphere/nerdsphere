@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "a new social media app for nerds",
   "main": "index.js",
-  "type": "module", 
+  "type": "module",
   "scripts": {
-      "start": "nodemon index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "helmet": "^7.1.0",
-    "mongoose": "^8.4.3"
+    "mongoose": "^8.4.3",
+    "mongoose-aggregate-paginate-v2": "^1.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.3",
